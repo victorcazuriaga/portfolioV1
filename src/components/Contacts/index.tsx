@@ -81,7 +81,7 @@ export const Contacts = () => {
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={`mailto=${userData.emailUser}`}
+                  href={`mailto:${userData.emailUser}`}
                 >
                   Send email now
                 </Text>
@@ -106,7 +106,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={userData.linkedinUser}
                 >
-                  Go to Telegram Now
+                  Go to Linkedin
                 </Text>
               </ContactCardContent>
             </ContactCard>

@@ -69,7 +69,7 @@ export const Home = (): JSX.Element => {
                 as="a"
                 type="circle"
                 target="_blank"
-                href={userData.githubUser}
+                href={`https://github.com/${userData.githubUser}`}
               >
                 <FaGithub />
               </Button>

@@ -35,10 +35,11 @@ export const Project = (): JSX.Element => {
     };
     fetchData();
   }, []);
-
+  console.log(repositories)
   return (
     <>
       {repositories?.map((repository) => (
+
         <ProjectWrapper key={repository.id}>
           <ProjectTitle
             as="h2"
@@ -69,10 +70,11 @@ export const Project = (): JSX.Element => {
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            
+            {/* {repository.description.substring(0, 129)} */}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
+            <ProjectLink target="_blank" href={repository.html_url}>
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
